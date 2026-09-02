@@ -1501,6 +1501,12 @@ a.epk-link-row:focus-visible {
   margin: 0;
 }
 
+.epk-contacts dd a:hover,
+.epk-contacts dd a:focus-visible {
+  color: var(--bone);
+  outline: none;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .hero-image {
     animation: heroEnter 900ms cubic-bezier(0.2, 0.8, 0.2, 1) both;

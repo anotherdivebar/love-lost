@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { contactEmail, contactHref } from '@/data/contact';
 
 export function SiteFooter() {
   return (
@@ -17,6 +18,7 @@ export function SiteFooter() {
         <Link href="/merch">Merch</Link>
         <Link href="/media">Media</Link>
         <Link href="/epk">Press / EPK</Link>
+        <a href={contactHref}>{contactEmail}</a>
         <a href="https://www.youtube.com/watch?v=_fLfkVS4WWk" target="_blank" rel="noreferrer">YouTube ↗</a>
       </nav>
     </footer>

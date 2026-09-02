@@ -4,10 +4,11 @@ import { PageIntro } from '@/components/page-intro';
 import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
 import { VideoFrame } from '@/components/video-frame';
+import { contactEmail, contactHref } from '@/data/contact';
 
 export const metadata: Metadata = {
   title: 'Press / EPK — Love Lost',
-  description: 'Love Lost electronic press kit: band information, video, press photos, and contact placeholders.',
+  description: 'Love Lost electronic press kit: band information, video, press photos, and contact information.',
 };
 
 const pressPhotos = [
@@ -71,9 +72,12 @@ export default function EpkPage() {
           <div>
             <h2 id="epk-contact-title">Contact</h2>
             <dl>
-              <div><dt>Booking</dt><dd>[Booking contact to be supplied.]</dd></div>
-              <div><dt>Press</dt><dd>[Press contact to be supplied.]</dd></div>
-              <div><dt>General</dt><dd>[General contact to be supplied.]</dd></div>
+              {['Booking', 'Press', 'General'].map((label) => (
+                <div key={label}>
+                  <dt>{label}</dt>
+                  <dd><a href={contactHref}>{contactEmail}</a></dd>
+                </div>
+              ))}
             </dl>
           </div>
         </section>
