@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
 import { VideoFrame } from '@/components/video-frame';
@@ -82,7 +81,7 @@ export default function Home() {
               <span className="micro-label">On the road</span>
               <h2 id="shows-title">Shows</h2>
             </div>
-            <Link className="text-link" href="/shows">All dates →</Link>
+            <a className="text-link" href="/shows">All dates →</a>
           </div>
           {upcomingShows.length > 0 ? (
             <div className="show-list">
@@ -121,22 +120,22 @@ export default function Home() {
         </figure>
 
         <nav className="home-destinations" aria-label="Explore Love Lost">
-          <Link className="home-destination" href="/merch">
+          <a className="home-destination" href="/merch">
             <span>Goods</span><strong>Merch</strong><em>Open collection ↗</em>
-          </Link>
-          <Link className="home-destination" href="/media">
+          </a>
+          <a className="home-destination" href="/media">
             <span>Image archive</span><strong>Media</strong><em>Open archive ↗</em>
-          </Link>
-          <Link className="home-destination" href="/media">
+          </a>
+          <a className="home-destination" href="/media">
             <span>Listen</span><strong>Play it loud</strong><em>Open media ↗</em>
-          </Link>
+          </a>
         </nav>
 
         <section className="epk-callout" aria-labelledby="epk-title">
           <span className="micro-label">Booking / Press / Venues</span>
           <h2 id="epk-title">Need the files?</h2>
           <p>Press photos, band information, featured video, and technical placeholders.</p>
-          <Link href="/epk">Open the EPK <span aria-hidden="true">↗</span></Link>
+          <a href="/epk">Open the EPK <span aria-hidden="true">↗</span></a>
         </section>
       </main>
       <SiteFooter />

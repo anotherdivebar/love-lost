@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { contactEmail, contactHref } from '@/data/contact';
 
 export function SiteFooter() {
@@ -13,11 +12,11 @@ export function SiteFooter() {
         <p>© Love Lost</p>
       </div>
       <nav aria-label="Footer navigation" className="footer-links">
-        <Link href="/about">About</Link>
-        <Link href="/shows">Shows</Link>
-        <Link href="/merch">Merch</Link>
-        <Link href="/media">Media</Link>
-        <Link href="/epk">Press / EPK</Link>
+        <a href="/about">About</a>
+        <a href="/shows">Shows</a>
+        <a href="/merch">Merch</a>
+        <a href="/media">Media</a>
+        <a href="/epk">Press / EPK</a>
         <a href={contactHref}>{contactEmail}</a>
         <a href="https://www.youtube.com/watch?v=_fLfkVS4WWk" target="_blank" rel="noreferrer">YouTube ↗</a>
       </nav>
