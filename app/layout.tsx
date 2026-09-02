@@ -12,8 +12,15 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
+const vercelHost =
+  process.env.VERCEL_PROJECT_PRODUCTION_URL ?? process.env.VERCEL_URL;
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (vercelHost ? `https://${vercelHost}` : undefined) ??
+  'https://love-lost-kansas.ericm93-2023.chatgpt.site';
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://love-lost-kansas.ericm93-2023.chatgpt.site'),
+  metadataBase: new URL(siteUrl),
   title: {
     default: 'Love Lost — Emotional Hardcore from Kansas',
     template: '%s',
