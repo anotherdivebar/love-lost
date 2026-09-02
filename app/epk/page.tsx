@@ -81,10 +81,7 @@ export default function EpkPage() {
         <section className="epk-block epk-tech" aria-labelledby="epk-tech-title">
           <div className="epk-label">06 / Technical</div>
           <div>
-            <h2 id="epk-tech-title">Stage information</h2>
-            {['Stage plot', 'Input list', 'Hospitality rider', 'Technical rider'].map((item) => (
-              <div className="epk-file-row" key={item}><span>{item}</span><span>File not supplied</span></div>
-            ))}
+            <h2 id="epk-tech-title">Stage plot and input list available on request.</h2>
           </div>
         </section>
       </main>
