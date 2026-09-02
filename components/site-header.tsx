@@ -1,8 +1,8 @@
 const navigation = [
-  { href: '/shows', label: 'Shows' },
-  { href: '/merch', label: 'Merch' },
-  { href: '/media', label: 'Media' },
-  { href: '/epk', label: 'EPK' },
+  { href: '/shows.html', label: 'Shows' },
+  { href: '/merch.html', label: 'Merch' },
+  { href: '/media.html', label: 'Media' },
+  { href: '/epk.html', label: 'EPK' },
 ];
 
 export function SiteHeader() {

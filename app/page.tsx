@@ -81,7 +81,7 @@ export default function Home() {
               <span className="micro-label">On the road</span>
               <h2 id="shows-title">Shows</h2>
             </div>
-            <a className="text-link" href="/shows">All dates →</a>
+            <a className="text-link" href="/shows.html">All dates →</a>
           </div>
           {upcomingShows.length > 0 ? (
             <div className="show-list">
@@ -120,13 +120,13 @@ export default function Home() {
         </figure>
 
         <nav className="home-destinations" aria-label="Explore Love Lost">
-          <a className="home-destination" href="/merch">
+          <a className="home-destination" href="/merch.html">
             <span>Goods</span><strong>Merch</strong><em>Open collection ↗</em>
           </a>
-          <a className="home-destination" href="/media">
+          <a className="home-destination" href="/media.html">
             <span>Image archive</span><strong>Media</strong><em>Open archive ↗</em>
           </a>
-          <a className="home-destination" href="/media">
+          <a className="home-destination" href="/media.html">
             <span>Listen</span><strong>Play it loud</strong><em>Open media ↗</em>
           </a>
         </nav>
@@ -135,7 +135,7 @@ export default function Home() {
           <span className="micro-label">Booking / Press / Venues</span>
           <h2 id="epk-title">Need the files?</h2>
           <p>Press photos, band information, featured video, and technical placeholders.</p>
-          <a href="/epk">Open the EPK <span aria-hidden="true">↗</span></a>
+          <a href="/epk.html">Open the EPK <span aria-hidden="true">↗</span></a>
         </section>
       </main>
       <SiteFooter />

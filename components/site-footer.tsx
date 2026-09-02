@@ -12,11 +12,11 @@ export function SiteFooter() {
         <p>© Love Lost</p>
       </div>
       <nav aria-label="Footer navigation" className="footer-links">
-        <a href="/about">About</a>
-        <a href="/shows">Shows</a>
-        <a href="/merch">Merch</a>
-        <a href="/media">Media</a>
-        <a href="/epk">Press / EPK</a>
+        <a href="/about.html">About</a>
+        <a href="/shows.html">Shows</a>
+        <a href="/merch.html">Merch</a>
+        <a href="/media.html">Media</a>
+        <a href="/epk.html">Press / EPK</a>
         <a href={contactHref}>{contactEmail}</a>
         <a href="https://www.youtube.com/watch?v=_fLfkVS4WWk" target="_blank" rel="noreferrer">YouTube ↗</a>
       </nav>
