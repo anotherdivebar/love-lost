@@ -29,7 +29,6 @@ export default function EpkPage() {
           <div>
             <h2 id="epk-band-title">Love Lost<br /><span>Kansas</span></h2>
             <p className="epk-lede">Love Lost is an emotional hardcore band from Kansas.</p>
-            <p className="content-placeholder">[Approved short biography and member credits to be supplied.]</p>
           </div>
         </section>
 
