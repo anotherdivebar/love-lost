@@ -513,9 +513,10 @@ a {
 }
 
 .show-row time {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: clamp(2.8rem, 5vw, 5rem);
-  letter-spacing: -0.04em;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: clamp(1rem, 1.6vw, 1.4rem);
+  letter-spacing: -0.02em;
+  line-height: 1.4;
   text-transform: uppercase;
 }
 
@@ -1112,6 +1113,7 @@ a {
 .merch-page .page-intro {
   background: var(--bone);
   color: var(--ink);
+  min-height: calc(100svh - 68px);
 }
 
 .merch-page .page-intro > p {
@@ -1559,6 +1561,10 @@ a.epk-link-row:focus-visible {
 }
 
 @media (max-width: 760px) {
+  .merch-page .page-intro {
+    min-height: calc(100svh - 94px);
+  }
+
   .site-header {
     align-items: stretch;
     height: 94px;

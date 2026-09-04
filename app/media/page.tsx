@@ -29,7 +29,6 @@ export default function MediaPage() {
         <section className="archive-endcap">
           <span>10 frames</span>
           <h2>The room remembers.</h2>
-          <p>Additional live photography will be added as the archive is cleared for publication.</p>
         </section>
       </main>
       <SiteFooter />

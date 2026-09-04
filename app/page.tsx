@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
 import { VideoFrame } from '@/components/video-frame';
-import { shows } from '@/data/shows';
+import { formatShowDate, shows } from '@/data/shows';
 
 export default function Home() {
   const upcomingShows = shows.filter((show) => show.status === 'upcoming').slice(0, 3);
@@ -87,7 +87,7 @@ export default function Home() {
             <div className="show-list">
               {upcomingShows.map((show) => (
                 <article className="show-row" key={show.id}>
-                  <time dateTime={show.date}>{show.date}</time>
+                  <time dateTime={show.date}>{formatShowDate(show.date)}</time>
                   <div><strong>{show.city}, {show.region}</strong><span>{show.venue}</span></div>
                   <p>{show.bill.join(' / ')}</p>
                   {show.ticketUrl ? <a href={show.ticketUrl}>Tickets ↗</a> : <span>Info soon</span>}
