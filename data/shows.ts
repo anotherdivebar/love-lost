@@ -20,6 +20,16 @@ export const shows: Show[] = [
     ticketUrl: null,
     status: 'upcoming',
   },
+  {
+    id: '2026-11-14-warehouse-on-broadway-kansas-city',
+    date: '2026-11-14',
+    city: 'Kansas City',
+    region: 'MO',
+    venue: 'Warehouse on Broadway',
+    bill: ['Love Lost'],
+    ticketUrl: null,
+    status: 'upcoming',
+  },
 ];
 
 const showDateFormatter = new Intl.DateTimeFormat('en-US', {
