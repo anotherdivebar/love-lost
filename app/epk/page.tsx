@@ -38,9 +38,7 @@ export default function EpkPage() {
           <div>
             <h2 id="epk-music-title">Verified links</h2>
             <a className="epk-link-row" href="https://www.youtube.com/watch?v=_fLfkVS4WWk" target="_blank" rel="noreferrer"><span>YouTube</span><span>Watch ↗</span></a>
-            <div className="epk-link-row unavailable"><span>Spotify</span><span>Link not supplied</span></div>
-            <div className="epk-link-row unavailable"><span>Apple Music</span><span>Link not supplied</span></div>
-            <div className="epk-link-row unavailable"><span>Bandcamp</span><span>Link not supplied</span></div>
+            <a className="epk-link-row" href="https://open.spotify.com/artist/4Ep26QzgkXH5eQTjsowcOt" target="_blank" rel="noreferrer"><span>Spotify</span><span>Listen ↗</span></a>
           </div>
         </section>
 
